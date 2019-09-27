@@ -70,7 +70,7 @@
         <route id="pharmacyweb">
             <from uri="direct:pharmacy"/>
             <log message="prescribe hisid: ${headers.hisid}"/>
-            <to uri="activemq:queue:PHARMACYMSG"/>
+            <to uri="amq:queue:PHARMACYMSG"/>
             <wireTap uri="amq:queue:msgtransmit"/>
         </route>
     </camelContext>
