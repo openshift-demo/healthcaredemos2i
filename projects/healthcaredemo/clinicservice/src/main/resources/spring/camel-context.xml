@@ -68,7 +68,7 @@
                 <simple>${header.firstName} ${header.familyName}, birthday:${header.birthday} Gender:${header.gender}
                 </simple>
             </setBody>
-            <to uri="websocket://demo?port=9292&amp;sendToAll=true&amp;maxThreads=7"/>
+            <to uri="websocket://demo?port=9292&amp;sendToAll=true"/>
         </route>
 
         <route id="doTest">
