@@ -22,8 +22,8 @@
    </bean>
 
    <bean id="ACK" class="org.apache.camel.component.hl7.HL7" factory-method="ack"/>
-   <bean id="clinicRegistryService" class="com.mycompany.camel.spring.ClinicRegistryService" />
-   <bean id="prescriptionService" class="com.mycompany.camel.spring.PrescriptionService" />
+   <bean id="clinicRegistryService" class="org.mycompany.ClinicRegistryService" />
+   <bean id="prescriptionService" class="org.mycompany.PrescriptionService" />
    
    <camelContext id="ClinicService" xmlns="http://camel.apache.org/schema/spring">
    <route>
