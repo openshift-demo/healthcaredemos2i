@@ -148,31 +148,6 @@ objects:
           kind: ImageStreamTag
           name: ${APP_NAME}:latest
       type: ImageChange
-- apiVersion: v1
-  kind: Service
-  metadata:
-    creationTimestamp: null
-    labels:
-      app: ${APP_NAME}
-      component: ${APP_NAME}
-      container: java
-      group: healthcare
-      project: ${APP_NAME}
-      provider: s2i
-      version: 1.0.0-SNAPSHOT
-    name: ${APP_NAME}
-  spec:
-    selector:
-      app: ${APP_NAME}
-      component: ${APP_NAME}
-      container: java
-      group: healthcare
-      project: ${APP_NAME}
-      provider: s2i
-    sessionAffinity: None
-    type: ClusterIP
-  status:
-    loadBalancer: {}
 parameters:
 - description: The name assigned to the application.
   displayName: Application Name
