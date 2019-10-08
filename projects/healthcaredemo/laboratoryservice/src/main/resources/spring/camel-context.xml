@@ -9,7 +9,7 @@
 	<!-- <to uri="websocket://demo?host=localhost&amp;port=9294&amp;sendToAll=true"/> --><!-- <xpath resultType="java.lang.String">/Bundle/entry/resource/DiagnosticOrder/item/code/coding/display/@value</xpath> -->
 	<camelContext id="LabService"
 		xmlns="http://camel.apache.org/schema/spring">
-		<restConfiguration component="jetty" port="8081"
+		<restConfiguration component="jetty" port="8082"
 			bindingMode="auto" enableCORS="true">
 			<corsHeaders key="Access-Control-Allow-Origin" value="*" />
 			<corsHeaders key="Access-Control-Allow-Methods"
