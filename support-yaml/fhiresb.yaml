@@ -163,10 +163,14 @@ objects:
     name: ${APP_NAME}
   spec:
     ports:
-    - name: http
-      port: 8080
+    - name: netty
+      port: 80
       protocol: TCP
       targetPort: 8080
+    - name: http4
+      port: 8081
+      protocol: TCP
+      targetPort: 8081
     selector:
       app: ${APP_NAME}
       component: ${APP_NAME}
