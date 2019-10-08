@@ -163,10 +163,10 @@ objects:
     name: ${APP_NAME}
   spec:
     ports:
-    - name: http
-      port: 8080
+    - name: websocket
+      port: 9293
       protocol: TCP
-      targetPort: 8080
+      targetPort: 9293
     selector:
       app: ${APP_NAME}
       component: ${APP_NAME}
