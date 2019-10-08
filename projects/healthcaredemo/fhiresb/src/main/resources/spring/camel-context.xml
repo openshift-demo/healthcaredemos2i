@@ -28,7 +28,7 @@
 
 
 	<bean id="fhirConoverter"
-		class="com.mycompany.camel.spring.FHIRConoverter" />
+		class="org.mycompany.FHIRConoverter" />
 	<!-- here is a sample which processes the input files (leaving them in place 
 		- see the 'noop' flag) then performs content based routing on the message 
 		using XPath -->
